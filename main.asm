@@ -2812,3 +2812,11 @@ MarowakPicFront:     INCBIN "pic/bmon/marowak.pic"
 MarowakPicBack:      INCBIN "pic/monback/marowakb.pic"
 ENDC
 
+SECTION "partysprites",ROMX,BANK[$38]
+
+MonPartySprites:
+MonPartySprites1: INCBIN "gfx/mon_party_sprites1.2bpp"
+
+SECTION "partysprites2",ROMX,BANK[$39]
+
+MonPartySprites2: INCBIN "gfx/mon_party_sprites2.2bpp"

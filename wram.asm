@@ -1414,7 +1414,7 @@ wStatusScreenHPBarColor:: ; cf25
 
 	ds 7
 
-wCopyingSGBTileData:: ; c2fd
+wCopyingSGBTileData:: ; cf2d
 
 wWhichPartyMenuHPBar:: ; cf2d
 
@@ -3232,9 +3232,9 @@ wEXPBarKeepFullFlag:: ds 1
 ENDC
 
 
-SECTION "Stack", WRAMX[$dfff], BANK[1]
+SECTION "Stack", WRAMX[$df00], BANK[1]
+	ds $ff
 wStack:: ; dfff
-	ds -$100
 
 
 INCLUDE "sram.asm"

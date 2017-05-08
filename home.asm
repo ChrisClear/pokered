@@ -2579,7 +2579,7 @@ EngageMapTrainer::
 	ld a, [hli]    ; load trainer class
 	ld [wEngagedTrainerClass], a
 	ld a, [hl]     ; load trainer mon set
-	ld [wEnemyMonAttackMod], a
+	ld [wEngagedTrainerSet], a
 	jp PlayTrainerMusic
 
 PrintEndBattleText::
