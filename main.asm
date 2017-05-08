@@ -2094,3 +2094,12 @@ INCLUDE "engine/evolution.asm"
 INCLUDE "engine/overworld/elevator.asm"
 
 INCLUDE "engine/items/tm_prices.asm"
+
+SECTION "partysprites",ROMX,BANK[$30]
+
+MonPartySprites:
+MonPartySprites1: INCBIN "gfx/mon_party_sprites1.2bpp"
+
+SECTION "partysprites2",ROMX,BANK[$31]
+
+MonPartySprites2: INCBIN "gfx/mon_party_sprites2.2bpp"
